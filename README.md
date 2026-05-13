@@ -1,6 +1,6 @@
 # pgplogin
 
-Simple OpenPGP login for PHP. One file. No Composer, no PECL extension, no framework, no database. Decryption-challenge flow.
+Simple OpenPGP login for PHP. One file. No PECL extension, no framework, no database. Decryption-challenge flow.
 
 ![pgplogin demo](screenshot.png)
 
@@ -21,6 +21,22 @@ The cleartext token never persists. Only `sha256(token)` lives on the server, in
 No PECL extensions. The library shells out to `gpg` via `proc_open`.
 
 ## Install
+
+### Composer
+
+```bash
+composer require revmnds/pgplogin
+```
+
+Then rely on the autoloader:
+
+```php
+require_once __DIR__.'/vendor/autoload.php';
+
+$auth = new Pgplogin();
+```
+
+### Manual
 
 Download `pgplogin.php` into your project. That's it.
 
