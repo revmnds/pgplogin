@@ -1,0 +1,12 @@
+# Trim the Composer dist tarball to library essentials.
+# These files stay on GitHub but are excluded from `git archive` / Composer dist.
+
+/.dockerignore       export-ignore
+/.gitignore          export-ignore
+/Dockerfile          export-ignore
+/docker-compose.yml  export-ignore
+/example             export-ignore
+/example/**          export-ignore
+/screenshot.png      export-ignore
+/tests               export-ignore
+/tests/**            export-ignore

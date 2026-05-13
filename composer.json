@@ -1,0 +1,30 @@
+{
+    "name": "revmnds/pgplogin",
+    "description": "Simple OpenPGP passwordless login for PHP. One file, decryption-challenge flow. No PECL, no framework.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Santiago Valenzuela",
+            "homepage": "https://github.com/revmnds",
+            "role": "Developer"
+        }
+    ],
+    "keywords": ["pgp", "openpgp", "gpg", "authentication", "login", "passwordless"],
+    "homepage": "https://github.com/revmnds/pgplogin",
+    "require": {
+        "php": ">=8.1",
+        "ext-hash": "*"
+    },
+    "autoload": {
+        "files": ["pgplogin.php"]
+    },
+    "scripts": {
+        "test": "php tests/test.php"
+    },
+    "support": {
+        "issues": "https://github.com/revmnds/pgplogin/issues",
+        "source": "https://github.com/revmnds/pgplogin",
+        "security": "https://github.com/revmnds/pgplogin/security/policy"
+    }
+}

@@ -1,0 +1,9 @@
+.git
+.gitignore
+.idea
+.vscode
+README.md
+LICENSE
+vendor
+composer.lock
+.phpunit.result.cache
